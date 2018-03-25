@@ -13,6 +13,7 @@ class FacadeMainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // shapeMakerDemo()
         bankSystemDemo()
+
     }
 
     private fun bankSystemDemo() {
