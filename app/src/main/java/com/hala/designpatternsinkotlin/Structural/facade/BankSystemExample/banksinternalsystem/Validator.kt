@@ -6,9 +6,9 @@ package com.hala.designpatternsinkotlin.Structural.facade.BankSystemExample.bank
  * @since 2018-03-25
  */
 class Validator {
-    fun checkIfAccountHasEnoughMoneyForTransaction(): Boolean = false
+    fun checkIfAccountHasEnoughMoneyForTransaction(): Boolean = true
 
-    fun checkIfAccountExceedsCreditLimits(): Boolean = false
+    fun checkIfAccountExceedsCreditLimits(): Boolean = true
 
     fun creditFailureMessage() = println("sorry you cannot credit to this account")
 

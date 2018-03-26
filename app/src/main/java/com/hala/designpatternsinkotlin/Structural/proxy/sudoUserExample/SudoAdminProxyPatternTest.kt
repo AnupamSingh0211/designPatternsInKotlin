@@ -8,7 +8,7 @@ package com.hala.designpatternsinkotlin.Structural.proxy.sudoUserExample
 class SudoAdminProxyPatternTest {
 
     fun main() {
-        val executor = CommandExecutorProxy("Anupam", "iOS")
+        val executor = CommandExecutorProxy("Anupam", "Android")
         try {
             executor.runCommand("ls -ltr")
             executor.runCommand(" rm -rf abc.pdf")

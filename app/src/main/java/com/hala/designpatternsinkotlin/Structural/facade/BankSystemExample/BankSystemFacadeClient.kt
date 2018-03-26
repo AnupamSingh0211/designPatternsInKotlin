@@ -11,7 +11,5 @@ class BankSystemFacadeClient {
         val netBankingFacade = NetBankingFacade()
         netBankingFacade.debitMoney()
         netBankingFacade.creditMoney()
-
-
     }
 }
