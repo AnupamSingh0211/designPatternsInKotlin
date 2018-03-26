@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.hala.designpatternsinkotlin.R
 import com.hala.designpatternsinkotlin.Structural.proxy.ImageExample.ProxyPatternDemo
+import com.hala.designpatternsinkotlin.Structural.proxy.sudoUserExample.SudoAdminProxyPatternTest
 
 /**
  * @author Anupam Singh
@@ -15,7 +16,13 @@ class ProxyPatternMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        showImagesDemo()
+       // showImagesDemo()
+        showSudoAdminDemo()
+    }
+
+    private fun showSudoAdminDemo() {
+        val sudoAdminProxy = SudoAdminProxyPatternTest()
+        sudoAdminProxy.main()
     }
 
     private fun showImagesDemo() {
