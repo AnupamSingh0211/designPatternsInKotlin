@@ -6,8 +6,7 @@ import com.hala.designpatternsinkotlin.R
 import com.hala.designpatternsinkotlin.Structural.bridge.DrawingCirclesExample.Circle
 import com.hala.designpatternsinkotlin.Structural.bridge.DrawingCirclesExample.GreenCircle
 import com.hala.designpatternsinkotlin.Structural.bridge.DrawingCirclesExample.RedCircle
-
-
+import com.hala.designpatternsinkotlin.Structural.bridge.DrivingCarsExample.runDrivingCarsExample
 
 /**
  * @author Anupam Singh
@@ -19,7 +18,8 @@ class BridgePatternMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bridge)
-        drawCirclesDemo()
+        // drawCirclesDemo()
+        runDrivingCarsExample()
     }
 
     private fun drawCirclesDemo() {
