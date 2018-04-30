@@ -1,6 +1,8 @@
 package com.hala.designpatternsinkotlin.Structural.flyweight.gameTrafficVehicleExample
 
 import android.os.Handler
+import java.util.*
+import kotlin.concurrent.schedule
 
 /**
  * @author Anupam Singh
@@ -35,15 +37,15 @@ class Vehicle(name: String) {
                 + "-" + speed + "mph-" + duration + "seconds")
 
         // adding a timer to  wait then take a vehicle out of the traffic
+        active = true
 
-        Handler().postDelayed({
+        Timer().schedule(2000){
 
             active = false
             println(name + "-->> Out")
+        }
 
-        }, 2000)
 
-        active = true
     }
 
 
