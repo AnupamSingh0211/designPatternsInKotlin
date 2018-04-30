@@ -6,7 +6,7 @@ package com.hala.designpatternsinkotlin.Structural.flyweight.circleExample
  * @since 2018-04-27
  */
 
-class FlyweightPatternDemo {
+class ShapeClient {
 
 
 companion object {
