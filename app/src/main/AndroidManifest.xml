@@ -20,6 +20,9 @@
         <activity android:name=".Structural.decorator.DecoratorPatternMainActivity" />
         <activity android:name=".Structural.facade.FacadeMainActivity" />
         <activity android:name=".Structural.proxy.ProxyPatternMainActivity" />
+        <activity android:name=".Creational.AbstractFactory.AbstractFactoryClient" />
+        <activity android:name=".Creational.Factory.FactoryClient" />
+        <activity android:name=".Creational.Singleton.SingletonDemoActivity" />
         <!--<activity android:name=".Structural.flyweight.FlyweightPatternMainActivity" />-->
     </application>
 
