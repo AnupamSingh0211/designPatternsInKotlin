@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behaviorial.ChainOfResponsibility
+package com.hala.designpatternsinkotlin.Behavioral.ChainOfResponsibility
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

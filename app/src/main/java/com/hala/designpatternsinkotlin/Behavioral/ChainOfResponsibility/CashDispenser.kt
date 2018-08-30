@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behaviorial.ChainOfResponsibility
+package com.hala.designpatternsinkotlin.Behavioral.ChainOfResponsibility
 
 class CashDispenser(value: Int) {
 
