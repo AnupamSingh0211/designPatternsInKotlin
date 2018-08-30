@@ -16,7 +16,6 @@ class CashDispenser(value: Int) {
         } else
             cashDispenserNext?.setNextDispenser(cashDispenser)
     }
-
     fun dispense(amount: Int) {
 
         if (amount >= demonimator) {
