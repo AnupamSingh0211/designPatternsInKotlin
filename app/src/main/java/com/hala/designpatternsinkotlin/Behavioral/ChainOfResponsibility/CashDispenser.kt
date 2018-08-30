@@ -1,5 +1,7 @@
 package com.hala.designpatternsinkotlin.Behavioral.ChainOfResponsibility
 
+import android.widget.Toast
+
 class CashDispenser(value: Int) {
 
     var demonimator: Int = value
@@ -13,7 +15,6 @@ class CashDispenser(value: Int) {
 
         } else
             cashDispenserNext?.setNextDispenser(cashDispenser)
-
     }
 
     fun dispense(amount: Int) {
@@ -22,13 +23,11 @@ class CashDispenser(value: Int) {
             val number = amount / demonimator
             val balance = amount % demonimator
             System.out.println(number.toString() + "*" + demonimator + "$")
-            if (balance != 0) {
+            if (balance != 0)
                 cashDispenserNext?.dispense(balance)
-            } else
-                cashDispenserNext?.dispense(amount)
-        }
-
-
+            }
+         else
+            cashDispenserNext?.dispense(amount)
     }
 
 }
