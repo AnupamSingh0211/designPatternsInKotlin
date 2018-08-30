@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Creational.Builder.BuilderClientActivity">
+        <activity android:name=".Behaviorial.ChainOfResponsibility.ChainClientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +20,12 @@
         <activity android:name=".Structural.decorator.DecoratorPatternMainActivity" />
         <activity android:name=".Structural.facade.FacadeMainActivity" />
         <activity android:name=".Structural.proxy.ProxyPatternMainActivity" />
+
+        <!--<activity android:name=".Behaviorial.ChainOfResponsibility.ChainClientActivity" />-->
         <!--<activity android:name=".Creational.Builder.BuilderClientActivity" />-->
         <!--<activity android:name=".Creational.AbstractFactory.AbstractFactoryClient" />-->
         <!--<activity android:name=".Creational.Factory.FactoryClient" />-->
-       <!--// <activity android:name=".Creational.Singleton.SingletonDemoActivity" />-->
+        <!--// <activity android:name=".Creational.Singleton.SingletonDemoActivity" />-->
         <!--<activity android:name=".Structural.flyweight.FlyweightPatternMainActivity" />-->
     </application>
 
