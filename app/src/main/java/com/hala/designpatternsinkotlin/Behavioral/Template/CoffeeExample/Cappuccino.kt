@@ -1,9 +1,9 @@
-package com.hala.designpatternsinkotlin.Behavioral.Template
+package com.hala.designpatternsinkotlin.Behavioral.Template.CoffeeExample
 
-class Latte : Coffee() {
+class Cappuccino : Coffee() {
 
     override fun addMilk() {
-        println("Adding a lot of Milk")
+        println("Adding little bit of Milk")
     }
 
     override fun addSugar() {

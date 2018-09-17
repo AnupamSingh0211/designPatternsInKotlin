@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behavioral.State
+package com.hala.designpatternsinkotlin.Behavioral.State.AtmMachineExample
 
 class HasPin(internal var atmMachine: ATMMachine) : ATMState {
 

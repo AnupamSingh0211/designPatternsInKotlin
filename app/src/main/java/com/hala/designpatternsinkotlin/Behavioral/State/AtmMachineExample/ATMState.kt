@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behavioral.State
+package com.hala.designpatternsinkotlin.Behavioral.State.AtmMachineExample
 
 // Different states expected
 // HasCard, NoCard, HasPin, NoCash

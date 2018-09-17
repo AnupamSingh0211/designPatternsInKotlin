@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behavioral.Strategy
+package com.hala.designpatternsinkotlin.Behavioral.Strategy.gameExample
 
 class AttackingStrategy : IGameStrategy {
 

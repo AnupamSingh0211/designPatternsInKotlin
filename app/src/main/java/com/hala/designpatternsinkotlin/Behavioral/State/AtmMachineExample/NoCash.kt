@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behavioral.State
+package com.hala.designpatternsinkotlin.Behavioral.State.AtmMachineExample
 
 class NoCash(internal var atmMachine: ATMMachine) : ATMState {
 

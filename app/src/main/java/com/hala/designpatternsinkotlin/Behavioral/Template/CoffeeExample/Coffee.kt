@@ -1,4 +1,4 @@
-package com.hala.designpatternsinkotlin.Behavioral.Template
+package com.hala.designpatternsinkotlin.Behavioral.Template.CoffeeExample
 
 abstract class Coffee {
 
