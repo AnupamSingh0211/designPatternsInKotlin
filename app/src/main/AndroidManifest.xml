@@ -20,6 +20,7 @@
         <activity android:name=".Structural.decorator.DecoratorPatternMainActivity" />
         <activity android:name=".Structural.facade.FacadeMainActivity" />
         <activity android:name=".Structural.proxy.ProxyPatternMainActivity" />
+        <activity android:name=".Behavioral.Command.CommandClientActivity" />
 
         <!--<activity android:name=".Behaviorial.ChainOfResponsibility.ChainClientActivity" />-->
         <!--<activity android:name=".Creational.Builder.BuilderClientActivity" />-->

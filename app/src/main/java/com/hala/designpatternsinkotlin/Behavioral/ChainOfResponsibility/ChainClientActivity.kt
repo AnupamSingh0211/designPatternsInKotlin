@@ -47,6 +47,8 @@ class ChainClientActivity : AppCompatActivity() {
 
         return errorLogger
     }
+
+
     private fun runCashDispenserDemo() {
 
         val cashDispenser: CashDispenser = CashDispenser(100)
