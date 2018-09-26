@@ -3,6 +3,7 @@ package com.hala.designpatternsinkotlin.Behavioral.Interpreter
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.hala.designpatternsinkotlin.Behavioral.Interpreter.MathsExpressionsExample.*
+import com.hala.designpatternsinkotlin.R
 import java.util.*
 
 class InterpreterClientActivity : AppCompatActivity() {
@@ -17,23 +18,23 @@ class InterpreterClientActivity : AppCompatActivity() {
     fun runMathsExpressionDemo() {
 
 
-        var postFixToRun = "543-2+*"
+        val postFixToRun = "543-2+*"
 
-        var operators = "+-*/"
+        val operators = "+-*/"
 
-        var stack = Stack<Expression>()
+        val stack = Stack<Expression>()
 
 
-        for (Char c : postFixToRun.toCharArray()){
+        for (c in postFixToRun.toCharArray()){
 
-            var resultExp: Expression
+             var  resultExp : Expression = Number(0)
 
             if (operators.indexOf(c) == -1) {
                 //number found
-                resultExp = Number(c - 48);
+                resultExp = Number(c.toInt() - 48);
             } else {
-                var right: Expression
-                var left: Expression
+                val right: Expression = stack.pop()
+                val left: Expression = stack.pop()
 
                 when (c) {
                     '+' ->
@@ -45,10 +46,10 @@ class InterpreterClientActivity : AppCompatActivity() {
                     '/' ->
                         resultExp = DivideExpression(left, right)
 
-
                 }
 
             }
+
             stack.push(Number(resultExp.evaluate()))
         }
 

@@ -1,6 +1,9 @@
 package com.hala.designpatternsinkotlin.Behavioral.Mediator.AirTrafficMediatorExample
 
-class ATCMediatorImpl(var gates: ArrayList<Gate>) : ATCMediator {
+class ATCMediatorImpl : ATCMediator {
+
+
+    lateinit var gates: ArrayList<Gate>
 
     lateinit var runway: Runway
 
@@ -17,17 +20,15 @@ class ATCMediatorImpl(var gates: ArrayList<Gate>) : ATCMediator {
 
         if (runway.inUse == false) {
 
+            for (gate in gates) {
 
-            for (int i = 0; i < gates.size(); i++)
-            {
-                if (gates.get(i).inUse) == false {
-
+                if (gate.inUse == false) {
                     flight.allocateRunWay(runway)
-                    flight.allocateGate(gates.get(i))
+                    flight.allocateGate(gate)
                     return true;
                 }
             }
-
+            return false
         }
         //all gates in use
         else
@@ -36,12 +37,12 @@ class ATCMediatorImpl(var gates: ArrayList<Gate>) : ATCMediator {
     }
 
     override fun getTakeOffPerrmission(flight: Flight): Boolean {
-  return runway.inUse == false
+        return runway.inUse == false
 
     }
 
     override fun enterRunway(runway: Runway) {
-runway.inUse = true
+        runway.inUse = true
     }
 
     override fun exitRunWay(runway: Runway) {
@@ -49,10 +50,10 @@ runway.inUse = true
     }
 
     override fun enterGate(gate: Gate) {
-     gate.inUse=  true
+        gate.inUse = true
     }
 
     override fun exitGate(gate: Gate) {
-        gate.inUse=  false
+        gate.inUse = false
     }
 }
