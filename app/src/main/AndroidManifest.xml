@@ -23,6 +23,7 @@
         <activity android:name=".Behavioral.Command.CommandClientActivity" />
         <activity android:name=".Behavioral.Mediator.MediatorClientActivity" />
         <activity android:name=".Behavioral.Interpreter.InterpreterClientActivity" />
+        <activity android:name=".Behavioral.Iterator.IterationClientActivity" />
 
         <!--<activity android:name=".Behaviorial.ChainOfResponsibility.ChainClientActivity" />-->
         <!--<activity android:name=".Creational.Builder.BuilderClientActivity" />-->

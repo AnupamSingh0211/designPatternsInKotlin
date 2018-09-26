@@ -3,6 +3,7 @@ package com.hala.designpatternsinkotlin.Behavioral.Command
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.hala.designpatternsinkotlin.Behavioral.Command.RestaurantExample.*
+import com.hala.designpatternsinkotlin.R
 
 class CommandClientActivity : AppCompatActivity(){
 
@@ -24,10 +25,10 @@ class CommandClientActivity : AppCompatActivity(){
         waiter.execute(command2)
 
         var command3 = CancelMainDish(item2)
-        waiter.execute(command23)
+        waiter.execute(command3)
 
         val item3 = Dessert("IceCream")
-        val command3 = OrderDessert(item3)
-        waiter.execute(command3)
+        val command4 = OrderDessert(item3)
+        waiter.execute(command4)
     }
 }
